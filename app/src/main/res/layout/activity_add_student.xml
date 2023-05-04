@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudent"
+    android:background="@drawable/galaxy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add student details as required"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="35dp"/>
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name ..."
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name ..."
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address ..."
+            android:inputType="text|textCapWords"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/etAvg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Average ..."
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnSubmitToAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:backgroundTint="#B788C7E4"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</LinearLayout>

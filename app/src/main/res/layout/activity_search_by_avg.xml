@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchByAvg"
+    android:background="@drawable/galaxy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:text="Enter the grade point average to get the highest grades"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="35dp"/>
+
+    <EditText
+        android:id="@+id/avgInputEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Average ..."
+        android:textSize="20sp"
+        android:layout_margin="30dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/searchAvgBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B788C7E4"
+        android:layout_gravity="center"
+        android:text="Search"
+        android:textSize="20sp"
+        android:textAllCaps="false" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewByAvg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp" />
+    </LinearLayout>
+</LinearLayout>
